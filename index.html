@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+
+    @font-face {
+      font-family: 'Poppins';
+      src: url(fonts/Poppins-Regular.ttf) format('truetype');
+      font-weight: 400;
+      font-style: normal;
+    }   
+    
+    @font-face {
+        font-family: 'Poppins-Bold';
+        src: url(fonts/Poppins-Bold.ttf) format('truetype');
+        font-weight: 200;
+        font-style: normal;
+      } 
+    @font-face {
+        font-family: 'Poppins-Italic';
+        src: url(fonts/Poppins-Italic.ttf) format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    } 
+    @font-face {
+        font-family: 'Poppins-ExtraBoldItalic';
+        src: url(fonts/Poppins-ExtraBoldItalic.ttf) format('truetype');
+        font-weight: 700;
+        font-style: italic;
+    }@font-face {
+        font-family: 'Poppins-ExtraBold';
+        src: url(fonts/Poppins-ExtraBold.ttf) format('truetype');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+</style>
+<body class="container">
+    <div class="content" >
+        <header class="align">        
+            <div>
+                <div id="textDay" class="texto">D A Y</div>
+                <input id="day" class="estilo" type="text" value="DD">
+                <span id="errorMessage1" class="align3"></span>  
+            </div>   
+            <div>
+                <div id="textMonth" class="texto">M O N T H</div>
+                <input id="month" class="estilo" type="text" value="MM">
+                <span id="errorMessage2" class="align3"></span>
+            </div>
+            <div>
+                <div id="textYear" class="texto">Y E A R</div>
+                <input id="year" class="estilo" type="text" value="YYYY">
+                <span id="errorMessage3" class="align3"></span>
+            </div>
+        </header>
+        <div class="alinhar">
+            <hr class="linha-personalizada">   
+            <button id="button" class="botao"><img src="icon-arrow.svg" alt="Descrição da imagem"></button>   
+               
+        </div>
+        <div >
+            <div class="align4">
+                <div id="displayYear" class="letra2">--</div>
+                <div class="letra">years</div>
+            </div>
+            <div class="align2">
+                <div id="displayMonth" class="letra2">--</div>
+                <div class="letra">months</div>
+            </div>
+            <div class="align5">
+                <div id="displayDay" class="letra2">--</div>
+                <div class="letra">days</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="ageCalculator.js" type="module"></script>
+</body>
+</html>
